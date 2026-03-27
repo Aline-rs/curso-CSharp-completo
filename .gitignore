@@ -1,0 +1,15 @@
+@"
+# Dependências
+bin/
+obj/
+.vs/
+.vscode/
+
+# Arquivos de usuário
+*.user
+*.suo
+
+# Arquivos temporários
+*.tmp
+*.log
+"@ | Out-File -FilePath .gitignore -Encoding UTF8
