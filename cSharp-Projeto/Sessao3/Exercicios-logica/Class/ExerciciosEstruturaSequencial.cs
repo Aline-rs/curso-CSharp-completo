@@ -21,19 +21,11 @@
             return double.Parse(Console.ReadLine());
         }
 
-        public void ExibirResultado(int resultado)
+        public void ExibirResultado(string mensagem, double resultado, string casasDecimais)
         {
-            Console.WriteLine($"Resultado = {resultado}");
-        }
+            Console.Write(mensagem);
+            Console.WriteLine(resultado.ToString(casasDecimais));
 
-        public void ExibirResultado(double resultado)
-        {
-            Console.WriteLine($"Resultado = {resultado:F4}");
-        }
-        public void ExibirResultado(int numeroFuncionario, double resultado)
-        {
-            Console.WriteLine($"NUMBER = {numeroFuncionario}");
-            Console.WriteLine($"SALARY = U$ {resultado:F2}");
         }
 
         public double CalcularAreaDoCirculo(double raio)
@@ -51,6 +43,11 @@
         public double CalcularSalarioHora(double valorHora, double horasTrabalhadas)
         {
             return valorHora * horasTrabalhadas;
+        }
+
+        public double CalcularValorTotalPecas(int numeroPeca1, double valorUnitario1, int numeroPeca2, double valorUnitario2)
+        {
+            return (numeroPeca1 * valorUnitario1) + (numeroPeca2 * valorUnitario2);
         }
     }
 }

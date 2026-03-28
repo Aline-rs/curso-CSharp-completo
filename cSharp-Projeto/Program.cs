@@ -11,6 +11,7 @@ class Program
         //exercicios.Ex1();
         //exercicios.Ex2();
         //exercicios.EX3();
-        exercicios.EX4();
+        //exercicios.EX4();
+        exercicios.EX5();
     }
 }
