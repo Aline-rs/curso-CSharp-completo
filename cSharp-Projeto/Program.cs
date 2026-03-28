@@ -4,6 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
+
+        // EXERCICIO 01 
+
         var exerciciosEstruturaSequencial = new ExerciciosEstruturaSequencial();
 
         int primeiroNumero = exerciciosEstruturaSequencial.LerNumero("Digite o primeiro número: ");
