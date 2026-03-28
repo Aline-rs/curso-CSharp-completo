@@ -37,5 +37,10 @@
             return pi * Math.Pow(raio, 2);
         }
 
+        public int CalcularDiferenca(int a, int b, int c, int d)
+        {
+            return (a * b - c * d);
+
+        }
     }
 }

@@ -29,5 +29,20 @@ namespace cSharp_Projeto.Sessão_3.Exercicios_logica.Class
             exerciciosEstruturaSequencial.ExibirResultado(resultado);
             Console.ReadLine();
         }
+
+        public void EX3()
+        {
+            var exerciciosEstruturaSequencial = new ExerciciosEstruturaSequencial();
+
+            int a = exerciciosEstruturaSequencial.LerInteiro("Digite o valor de A: ");
+            int b = exerciciosEstruturaSequencial.LerInteiro("Digite o valor de B: ");
+            int c = exerciciosEstruturaSequencial.LerInteiro("Digite o valor de C: ");
+            int d = exerciciosEstruturaSequencial.LerInteiro("Digite o valor de D: ");
+
+            int resultado = exerciciosEstruturaSequencial.CalcularDiferenca(a, b, c, d);
+
+            exerciciosEstruturaSequencial.ExibirResultado(resultado);
+            Console.ReadLine();
+        }
     }
 }
