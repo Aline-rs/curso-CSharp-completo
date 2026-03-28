@@ -49,5 +49,24 @@
         {
             return (numeroPeca1 * valorUnitario1) + (numeroPeca2 * valorUnitario2);
         }
+
+        public double CalcularAreaDoTriangulo(double baseTriangulo, double alturaTriangulo)
+        {
+            return (baseTriangulo * alturaTriangulo) / 2;
+        }
+
+        public double CalcularAreaDoTrapezio(double baseMaior, double baseMenor, double altura)
+        {
+            return ((baseMaior + baseMenor) * altura) / 2;
+        }
+
+        public double CalcularAreaDoQuadrado(double lado)
+        {
+            return Math.Pow(lado, 2);
+        }
+        public double CalcularAreaDoRetangulo(double largura, double altura)
+        {
+            return largura * altura;
+        }
     }
 }

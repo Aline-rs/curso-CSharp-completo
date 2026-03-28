@@ -9,6 +9,8 @@
 
             int resultado = Somar(primeiroNumero, segundoNumero);
 
+            Console.Clear();
+
             ExibirResultado("SOMA = ", resultado, "F0");
             Console.ReadLine();
         }
@@ -19,6 +21,8 @@
             double area = (double)CalcularAreaDoCirculo(raio);
 
             double resultado = area;
+
+            Console.Clear();
 
             ExibirResultado("A=", resultado, "F4");
             Console.ReadLine();
@@ -33,6 +37,8 @@
 
             int resultado = CalcularDiferenca(a, b, c, d);
 
+            Console.Clear();
+
             ExibirResultado("DIFERENÇA = ", resultado, "F0");
             Console.ReadLine();
         }
@@ -45,6 +51,9 @@
             double valorHora = LerDecimal("Digite o valor da hora: ");
 
             int resultado = (int)CalcularSalarioHora(valorHora, horasTrabalhadas);
+
+            Console.Clear();
+
             ExibirResultado("NUMBER = ", numeroFuncionario, "F0");
             ExibirResultado("SALARY = U$ ", resultado, "F2");
             Console.ReadLine();
@@ -61,7 +70,32 @@
             double valorUnitarioPeca2 = LerDecimal("Digite o valor unitário da peça 2: ");
 
             double resultado = CalcularValorTotalPecas(numeroPeca1, valorUnitarioPeca1, numeroPeca2, valorUnitarioPeca2);
+
+            Console.Clear();
+
             ExibirResultado("VALOR A PAGAR: U$ ", resultado, "F2");
+            Console.ReadLine();
+        }
+
+        public void EX6()
+        {
+            double valorA = LerDecimal("Digite o valor de A: ");
+            double valorB = LerDecimal("Digite o valor de B: ");
+            double valorC = LerDecimal("Digite o valor de C: ");
+
+            double triangulo = CalcularAreaDoTriangulo(valorA, valorC);
+            double circulo = CalcularAreaDoCirculo(valorC);
+            double trapezio = CalcularAreaDoTrapezio(valorA, valorB, valorC);
+            double quadrado = CalcularAreaDoQuadrado(valorB);
+            double retangulo = CalcularAreaDoRetangulo(valorA, valorB);
+
+            Console.Clear();
+
+            ExibirResultado("TRIANGULO: ", triangulo, "F3");
+            ExibirResultado("CIRCULO: ", circulo, "F3");
+            ExibirResultado("TRAPEZIO: ", trapezio, "F3");
+            ExibirResultado("QUADRADO: ", quadrado, "F3");
+            ExibirResultado("RETANGULO: ", retangulo, "F3");
             Console.ReadLine();
         }
     }
