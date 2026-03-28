@@ -1,4 +1,6 @@
-﻿namespace cSharp_Projeto.Sessão_3.Exercicios_logica
+﻿using System.Globalization;
+
+namespace cSharp_Projeto.Sessão_3.Exercicios_logica
 {
     public class ExerciciosEstruturaSequencial
     {
@@ -18,13 +20,13 @@
         {
             Console.WriteLine(mensagem);
 
-            return double.Parse(Console.ReadLine());
+            return double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
         }
 
         public void ExibirResultado(string mensagem, double resultado, string casasDecimais)
         {
             Console.Write(mensagem);
-            Console.WriteLine(resultado.ToString(casasDecimais));
+            Console.WriteLine(resultado.ToString(casasDecimais, CultureInfo.InvariantCulture));
 
         }
 

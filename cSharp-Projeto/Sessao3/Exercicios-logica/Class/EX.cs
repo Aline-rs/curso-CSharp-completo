@@ -18,7 +18,7 @@
         public void Ex2()
         {
             double raio = LerDecimal("Digite o valor do raio: ");
-            double area = (double)CalcularAreaDoCirculo(raio);
+            double area = CalcularAreaDoCirculo(raio);
 
             double resultado = area;
 
@@ -50,7 +50,7 @@
             double horasTrabalhadas = LerDecimal("Digite as horas trabalhadas: ");
             double valorHora = LerDecimal("Digite o valor da hora: ");
 
-            int resultado = (int)CalcularSalarioHora(valorHora, horasTrabalhadas);
+            double resultado = CalcularSalarioHora(valorHora, horasTrabalhadas);
 
             Console.Clear();
 
@@ -73,7 +73,7 @@
 
             Console.Clear();
 
-            ExibirResultado("VALOR A PAGAR: U$ ", resultado, "F2");
+            ExibirResultado("VALOR A PAGAR: R$ ", resultado, "F2");
             Console.ReadLine();
         }
 
