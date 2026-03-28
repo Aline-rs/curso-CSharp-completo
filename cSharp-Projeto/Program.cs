@@ -1,20 +1,14 @@
 ﻿using cSharp_Projeto.Sessão_3.Exercicios_logica;
+using cSharp_Projeto.Sessão_3.Exercicios_logica.Class;
 
 class Program
 {
     static void Main(string[] args)
     {
 
-        // EXERCICIO 01 
+        var exercicios = new EX();
 
-        var exerciciosEstruturaSequencial = new ExerciciosEstruturaSequencial();
-
-        int primeiroNumero = exerciciosEstruturaSequencial.LerNumero("Digite o primeiro número: ");
-        int segundoNumero = exerciciosEstruturaSequencial.LerNumero("Digite o segundo número: ");
-
-        int resultado = exerciciosEstruturaSequencial.Somar(primeiroNumero, segundoNumero);
-
-        exerciciosEstruturaSequencial.ExibirResultado(resultado);
-        Console.ReadLine();
+        //exercicios.Ex1();
+        //exercicios.Ex2();
     }
 }

@@ -1,4 +1,4 @@
 <Solution>
-  <Project Path="../Teste/Teste.csproj" Id="d9eac881-3feb-4a26-9d05-0f4830e8037b" />
-  <Project Path="Sessão 3.csproj" />
+  <Project Path="../Teste/sessao-4.csproj" Id="d9eac881-3feb-4a26-9d05-0f4830e8037b" />
+  <Project Path="sessao-3.csproj" />
 </Solution>
