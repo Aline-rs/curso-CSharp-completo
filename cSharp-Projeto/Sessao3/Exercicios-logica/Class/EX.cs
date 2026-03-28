@@ -44,5 +44,18 @@ namespace cSharp_Projeto.Sessão_3.Exercicios_logica.Class
             exerciciosEstruturaSequencial.ExibirResultado(resultado);
             Console.ReadLine();
         }
+
+        public void EX4()
+        {
+            var exerciciosEstruturaSequencial = new ExerciciosEstruturaSequencial();
+
+            int numeroFuncionario = exerciciosEstruturaSequencial.LerInteiro("Digite o número do funcionário: ");
+            double horasTrabalhadas = exerciciosEstruturaSequencial.LerDecimal("Digite as horas trabalhadas: ");
+            double valorHora = exerciciosEstruturaSequencial.LerDecimal("Digite o valor da hora: ");
+
+            int resultado = (int)exerciciosEstruturaSequencial.CalcularSalarioHora(valorHora, horasTrabalhadas);
+            exerciciosEstruturaSequencial.ExibirResultado(numeroFuncionario, resultado);
+            Console.ReadLine();
+        }
     }
 }

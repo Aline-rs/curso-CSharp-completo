@@ -30,6 +30,11 @@
         {
             Console.WriteLine($"Resultado = {resultado:F4}");
         }
+        public void ExibirResultado(int numeroFuncionario, double resultado)
+        {
+            Console.WriteLine($"NUMBER = {numeroFuncionario}");
+            Console.WriteLine($"SALARY = U$ {resultado:F2}");
+        }
 
         public double CalcularAreaDoCirculo(double raio)
         {
@@ -41,6 +46,11 @@
         {
             return (a * b - c * d);
 
+        }
+
+        public double CalcularSalarioHora(double valorHora, double horasTrabalhadas)
+        {
+            return valorHora * horasTrabalhadas;
         }
     }
 }
