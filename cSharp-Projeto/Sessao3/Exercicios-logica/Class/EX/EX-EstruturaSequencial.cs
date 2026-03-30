@@ -1,10 +1,10 @@
 ﻿namespace cSharp_Projeto.Sessão_3.Exercicios_logica.Class
 {
-    public class EX
+    public class EstruturaSequencial
     {
         private readonly ExerciciosEstruturaSequencial _utils;
 
-        public EX()
+        public EstruturaSequencial()
         {
             _utils = new ExerciciosEstruturaSequencial();
         }
